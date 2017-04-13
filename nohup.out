@@ -1,0 +1,698 @@
+1PHP Notice:  Undefined variable: user_id in /var/www/html/genReports1.php on line 129
+1PHP Notice:  Undefined variable: user_id in /var/www/html/genReports1.php on line 131
+PHP Notice:  Undefined variable: user_id in /var/www/html/genReports1.php on line 133
+array(1) {
+  [0]=>
+  array(6) {
+    ["profileId"]=>
+    int(1120378906465918)
+    ["countryCode"]=>
+    string(2) "US"
+    ["currencyCode"]=>
+    string(3) "USD"
+    ["dailyBudget"]=>
+    float(999999999)
+    ["timezone"]=>
+    string(19) "America/Los_Angeles"
+    ["accountInfo"]=>
+    array(2) {
+      ["marketplaceStringId"]=>
+      string(13) "ATVPDKIKX0DER"
+      ["sellerStringId"]=>
+      string(14) "A1JD350N9SEJTW"
+    }
+  }
+}
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC37.c5b2f2b2-ab11-4bf1-82f4-fbae7c27a03a
+            [recordType] => productAd
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+
+Warning: file_get_contents(/private/var/www/html/reports1718.json): failed to open stream: No such file or directory in /private/var/www/html/functions1.php on line 4
+array(1) {
+  [0]=>
+  array(6) {
+    ["profileId"]=>
+    int(1120378906465918)
+    ["countryCode"]=>
+    string(2) "US"
+    ["currencyCode"]=>
+    string(3) "USD"
+    ["dailyBudget"]=>
+    float(999999999)
+    ["timezone"]=>
+    string(19) "America/Los_Angeles"
+    ["accountInfo"]=>
+    array(2) {
+      ["marketplaceStringId"]=>
+      string(13) "ATVPDKIKX0DER"
+      ["sellerStringId"]=>
+      string(14) "A1JD350N9SEJTW"
+    }
+  }
+}
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC4B.8bddbea1-5ae9-4f3f-b301-73eae6f8f6ec
+            [recordType] => productAd
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC4C.fd450bb7-6223-4f54-b5a9-d78da885667c
+            [recordType] => keyword
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC4D.ebef8717-2fe6-4f33-ad7e-631668b8e6f0
+            [recordType] => keyword
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC52.f4cc43d4-c932-45ce-9505-ed8c0792c66a
+            [recordType] => productAd
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC54.b68dbc2e-707f-4f8d-b213-5bdb589d2269
+            [recordType] => keyword
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC56.13ea8d2c-7135-452b-ab15-9cbb2214b68e
+            [recordType] => keyword
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC5A.e5996784-b185-46ca-a6f4-a1d2f758cf1a
+            [recordType] => productAd
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC5B.81cb6107-35e0-4d1a-8dd2-ade31af3e9c4
+            [recordType] => keyword
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p1.58E8DC5D.54564f0d-5f9e-4dbb-bf7e-d62160dfae0e
+            [recordType] => keyword
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => 
+            [recordType] => productAd
+            [status] => FAILURE
+            [statusDetails] => Data for this report is not yet available.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => 
+            [recordType] => keyword
+            [status] => FAILURE
+            [statusDetails] => Data for this report is not yet available.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => 
+            [recordType] => keyword
+            [status] => FAILURE
+            [statusDetails] => Data for this report is not yet available.
+        )
+
+    [requestId] => 
+)
+* Rebuilt URL to: https://mws.amazonservices.com/
+*   Trying 54.239.25.189...
+* TCP_NODELAY set
+* Connected to mws.amazonservices.com (54.239.25.189) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: mws.amazonservices.com
+* Server certificate: Symantec Class 3 Secure Server CA - G4
+* Server certificate: VeriSign Class 3 Public Primary Certification Authority - G5
+> POST / HTTP/1.1
+Host: mws.amazonservices.com
+User-Agent: PPC Entourage/0.0.1 (Language=PHP/5.6.30; Platform=Darwin/x86_64/16.5.0; MWSClientVersion=2015-06-18)
+Accept: */*
+Content-Length: 461
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 461 out of 461 bytes
+< HTTP/1.1 200 OK
+< Server: Server
+< Date: Sat, 08 Apr 2017 12:49:43 GMT
+< Content-Type: text/xml
+< Content-Length: 715
+< Connection: keep-alive
+< x-mws-quota-max: 60.0
+< x-mws-quota-remaining: 60.0
+< x-mws-quota-resetsOn: 2017-04-08T13:35:00.000Z
+< X-Amz-Date: Sat, 08 Apr 2017 12:49:43 GMT
+< x-amzn-Authorization: AAA SignedHeaders=X-Amz-Date, identity=com.amazon.aaa.FrpAndromedaReportsPlugin.AndromedaControlService.amzn1.aaa.id.qhz3ylg755gkejyk5sh44qm3wy.Default/1, Signed=true, Encrypted=false, Signature=Drj4YijpEPTtG4gHMtZMOF89jShRmods0AK3y6Kx+fA=, Algorithm=HmacSHA256
+< x-mws-request-id: 416eeb7a-bb11-4cd2-b20c-da951b66f147
+< x-mws-timestamp: 2017-04-08T12:49:43.169Z
+< x-mws-response-context: O/6reg51Jr9wLTMyBmjZO8w0PtbYWaGn2EgYdWYj6RfrRiCaktJ3XV+R3CxDz/Dv/3gvjdBOkfQ=
+< Vary: Accept-Encoding,User-Agent
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host mws.amazonservices.com left intact
+* Rebuilt URL to: https://mws.amazonservices.com/
+* Hostname mws.amazonservices.com was found in DNS cache
+*   Trying 54.239.25.189...
+* TCP_NODELAY set
+* Connected to mws.amazonservices.com (54.239.25.189) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: mws.amazonservices.com
+* Server certificate: Symantec Class 3 Secure Server CA - G4
+* Server certificate: VeriSign Class 3 Public Primary Certification Authority - G5
+> POST / HTTP/1.1
+Host: mws.amazonservices.com
+User-Agent: PPC Entourage/0.0.1 (Language=PHP/5.6.30; Platform=Darwin/x86_64/16.5.0; MWSClientVersion=2015-06-18)
+Accept: */*
+Content-Length: 311
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 311 out of 311 bytes
+< HTTP/1.1 200 OK
+< Server: Server
+< Date: Sat, 08 Apr 2017 12:49:44 GMT
+< Content-Type: text/xml
+< Content-Length: 6891
+< Connection: keep-alive
+< x-mws-quota-max: 80.0
+< x-mws-quota-remaining: 80.0
+< x-mws-quota-resetsOn: 2017-04-08T13:35:00.000Z
+< X-Amz-Date: Sat, 08 Apr 2017 12:49:44 GMT
+< Vary: Accept-Encoding,User-Agent
+< x-amzn-Authorization: AAA SignedHeaders=X-Amz-Date, identity=com.amazon.aaa.FrpAndromedaReportsPlugin.AndromedaControlService.amzn1.aaa.id.qhz3ylg755gkejyk5sh44qm3wy.Default/1, Signed=true, Encrypted=false, Signature=0lJxUT5iwsNG4coYGgptJ3I5xGVqboyMzPx+/H1NDIw=, Algorithm=HmacSHA256
+< x-mws-request-id: 50ab00c8-51c2-4bd0-a207-2e95aee79e1d
+< x-mws-timestamp: 2017-04-08T12:49:44.483Z
+< x-mws-response-context: j2qlP/ZBbSMpcn7U8cejdi/u6FjnjXQjMN0XSV9R+mxHUiJ2i+DshQLYZ+lpox88yop5hWdGhgw=
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host mws.amazonservices.com left intact
+* Rebuilt URL to: https://mws.amazonservices.com/
+*   Trying 54.239.25.189...
+* TCP_NODELAY set
+* Connected to mws.amazonservices.com (54.239.25.189) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: mws.amazonservices.com
+* Server certificate: Symantec Class 3 Secure Server CA - G4
+* Server certificate: VeriSign Class 3 Public Primary Certification Authority - G5
+> POST / HTTP/1.1
+Host: mws.amazonservices.com
+User-Agent: PPC Entourage/0.0.1 (Language=PHP/5.6.30; Platform=Darwin/x86_64/16.5.0; MWSClientVersion=2015-06-18)
+Accept: */*
+Content-Length: 461
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 461 out of 461 bytes
+< HTTP/1.1 200 OK
+< Server: Server
+< Date: Sat, 08 Apr 2017 12:49:46 GMT
+< Content-Type: text/xml
+< Content-Length: 715
+< Connection: keep-alive
+< x-mws-quota-max: 60.0
+< x-mws-quota-remaining: 60.0
+< x-mws-quota-resetsOn: 2017-04-08T13:35:00.000Z
+< X-Amz-Date: Sat, 08 Apr 2017 12:49:46 GMT
+< x-amzn-Authorization: AAA SignedHeaders=X-Amz-Date, identity=com.amazon.aaa.FrpAndromedaReportsPlugin.AndromedaControlService.amzn1.aaa.id.qhz3ylg755gkejyk5sh44qm3wy.Default/1, Signed=true, Encrypted=false, Signature=CN1bCVaoQz5ss/fx+e8Pz3T9083GH8KrtwXwZQJ0Gns=, Algorithm=HmacSHA256
+< x-mws-request-id: f442550c-51ee-4bcb-8b52-b874bc4b9aad
+< x-mws-timestamp: 2017-04-08T12:49:45.935Z
+< x-mws-response-context: teDIoVBsYqJVK4LxONg2AtnZEdLivcLRYAddAvmwEOf1MhTA3u6crgP5nIGG1d+Lko865sMCdZg=
+< Vary: Accept-Encoding,User-Agent
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host mws.amazonservices.com left intact
+* Rebuilt URL to: https://mws.amazonservices.com/
+* Hostname mws.amazonservices.com was found in DNS cache
+*   Trying 54.239.25.189...
+* TCP_NODELAY set
+* Connected to mws.amazonservices.com (54.239.25.189) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: mws.amazonservices.com
+* Server certificate: Symantec Class 3 Secure Server CA - G4
+* Server certificate: VeriSign Class 3 Public Primary Certification Authority - G5
+> POST / HTTP/1.1
+Host: mws.amazonservices.com
+User-Agent: PPC Entourage/0.0.1 (Language=PHP/5.6.30; Platform=Darwin/x86_64/16.5.0; MWSClientVersion=2015-06-18)
+Accept: */*
+Content-Length: 313
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 313 out of 313 bytes
+< HTTP/1.1 200 OK
+< Server: Server
+< Date: Sat, 08 Apr 2017 12:49:47 GMT
+< Content-Type: text/xml
+< Content-Length: 6692
+< Connection: keep-alive
+< x-mws-quota-max: 80.0
+< x-mws-quota-remaining: 80.0
+< x-mws-quota-resetsOn: 2017-04-08T13:35:00.000Z
+< X-Amz-Date: Sat, 08 Apr 2017 12:49:47 GMT
+< Vary: Accept-Encoding,User-Agent
+< x-amzn-Authorization: AAA SignedHeaders=X-Amz-Date, identity=com.amazon.aaa.FrpAndromedaReportsPlugin.AndromedaControlService.amzn1.aaa.id.qhz3ylg755gkejyk5sh44qm3wy.Default/1, Signed=true, Encrypted=false, Signature=6GeFEjhOv4obe2dQXwhGvFNTdRNfptUI8RbURuUh3Fs=, Algorithm=HmacSHA256
+< x-mws-request-id: 942017f1-b7f1-4049-b757-0ea169cbaa77
+< x-mws-timestamp: 2017-04-08T12:49:47.168Z
+< x-mws-response-context: 0GX+k8K9FdpMi+LHpnmNK6fPe1kBmyxGYuMgEobscUjQ7VxUi1Wr0sGFxAmoY0qz1XqBBnmtnGk=
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host mws.amazonservices.com left intact
+sh: line 1: 50073 Killed: 9               /usr/bin/php /var/www/html/getReports1.php "-2 days" 1718
+
+array(5) {
+  [0]=>
+  array(6) {
+    ["profileId"]=>
+    int(1440789750143282)
+    ["countryCode"]=>
+    string(2) "UK"
+    ["currencyCode"]=>
+    string(3) "GBP"
+    ["dailyBudget"]=>
+    float(10)
+    ["timezone"]=>
+    string(3) "BST"
+    ["accountInfo"]=>
+    array(2) {
+      ["marketplaceStringId"]=>
+      string(14) "A1F83G8C2ARO7P"
+      ["sellerStringId"]=>
+      string(14) "A2D64JX6BKPPKX"
+    }
+  }
+  [1]=>
+  array(6) {
+    ["profileId"]=>
+    int(995846654091968)
+    ["countryCode"]=>
+    string(2) "DE"
+    ["currencyCode"]=>
+    string(3) "EUR"
+    ["dailyBudget"]=>
+    float(999999999)
+    ["timezone"]=>
+    string(12) "Europe/Paris"
+    ["accountInfo"]=>
+    array(2) {
+      ["marketplaceStringId"]=>
+      string(14) "A1PA6795UKMFR9"
+      ["sellerStringId"]=>
+      string(14) "A2D64JX6BKPPKX"
+    }
+  }
+  [2]=>
+  array(6) {
+    ["profileId"]=>
+    int(3316686898760850)
+    ["countryCode"]=>
+    string(2) "FR"
+    ["currencyCode"]=>
+    string(3) "EUR"
+    ["dailyBudget"]=>
+    float(999999999)
+    ["timezone"]=>
+    string(12) "Europe/Paris"
+    ["accountInfo"]=>
+    array(2) {
+      ["marketplaceStringId"]=>
+      string(14) "A13V1IB3VIYZZH"
+      ["sellerStringId"]=>
+      string(14) "A2D64JX6BKPPKX"
+    }
+  }
+  [3]=>
+  array(6) {
+    ["profileId"]=>
+    int(1861439852704128)
+    ["countryCode"]=>
+    string(2) "ES"
+    ["currencyCode"]=>
+    string(3) "EUR"
+    ["dailyBudget"]=>
+    float(999999999)
+    ["timezone"]=>
+    string(12) "Europe/Paris"
+    ["accountInfo"]=>
+    array(2) {
+      ["marketplaceStringId"]=>
+      string(14) "A1RKKUPIHCS9HS"
+      ["sellerStringId"]=>
+      string(14) "A2D64JX6BKPPKX"
+    }
+  }
+  [4]=>
+  array(6) {
+    ["profileId"]=>
+    int(979153760118151)
+    ["countryCode"]=>
+    string(2) "IT"
+    ["currencyCode"]=>
+    string(3) "EUR"
+    ["dailyBudget"]=>
+    float(999999999)
+    ["timezone"]=>
+    string(12) "Europe/Paris"
+    ["accountInfo"]=>
+    array(2) {
+      ["marketplaceStringId"]=>
+      string(13) "APJ6JRA9NG5V4"
+      ["sellerStringId"]=>
+      string(14) "A2D64JX6BKPPKX"
+    }
+  }
+}
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p5.58E8E426.8f30f735-2e47-4d9f-a863-106ac75acdb4
+            [recordType] => productAd
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+
+Warning: file_get_contents(/private/var/www/html/reports1524.json): failed to open stream: No such file or directory in /private/var/www/html/functions1.php on line 4
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p5.58E8E42B.205ee529-ebd4-4974-b56b-909257231118
+            [recordType] => keyword
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => amzn1.clicksAPI.v1.p5.58E8E42F.cfc7b0fe-539d-4722-bb5b-1e854b0525c8
+            [recordType] => keyword
+            [status] => IN_PROGRESS
+            [statusDetails] => Report has been submitted.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => 
+            [recordType] => productAd
+            [status] => FAILURE
+            [statusDetails] => Data for this report is not yet available.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => 
+            [recordType] => keyword
+            [status] => FAILURE
+            [statusDetails] => Data for this report is not yet available.
+        )
+
+    [requestId] => 
+)
+Array
+(
+    [success] => 1
+    [code] => 202
+    [response] => Array
+        (
+            [reportId] => 
+            [recordType] => keyword
+            [status] => FAILURE
+            [statusDetails] => Data for this report is not yet available.
+        )
+
+    [requestId] => 
+)
+* Rebuilt URL to: https://mws.amazonservices.fr/
+*   Trying 54.239.39.200...
+* TCP_NODELAY set
+* Connected to mws.amazonservices.fr (54.239.39.200) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: mws-eu.amazonservices.com
+* Server certificate: Symantec Class 3 Secure Server CA - G4
+* Server certificate: VeriSign Class 3 Public Primary Certification Authority - G5
+> POST / HTTP/1.1
+Host: mws.amazonservices.fr
+User-Agent: PPC Entourage/0.0.1 (Language=PHP/5.6.30; Platform=Darwin/x86_64/16.5.0; MWSClientVersion=2015-06-18)
+Accept: */*
+Content-Length: 464
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 464 out of 464 bytes
+< HTTP/1.1 200 OK
+< Server: Server
+< Date: Sat, 08 Apr 2017 13:23:15 GMT
+< Content-Type: text/xml
+< Content-Length: 715
+< Connection: keep-alive
+< x-mws-quota-max: 60.0
+< x-mws-quota-remaining: 60.0
+< x-mws-quota-resetsOn: 2017-04-08T14:07:00.000Z
+< X-Amz-Date: Sat, 08 Apr 2017 13:23:15 GMT
+< x-amzn-Authorization: AAA SignedHeaders=X-Amz-Date, identity=com.amazon.aaa.FrpAndromedaReportsPlugin.AndromedaControlService.amzn1.aaa.id.lwigtwr3h4inoeknjer76q4tl4.Default/1, Signed=true, Encrypted=false, Signature=QECI6ETLSy03KwqXL6Xcd2BxuRdL1Q+WZzqs+fhnSdk=, Algorithm=HmacSHA256
+< x-mws-request-id: cd02caec-fa7c-4a03-bb6a-621e7f040aa6
+< x-mws-timestamp: 2017-04-08T13:23:15.391Z
+< x-mws-response-context: GLWkJsHGX5G6V3JP1fiO+TkFNcqBwcRcb+ZG+S8VcSoCYKcxlaFTU68HKbokNosl9ZV1prcUdN8=
+< Vary: Accept-Encoding,User-Agent
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host mws.amazonservices.fr left intact
+* Rebuilt URL to: https://mws.amazonservices.fr/
+* Hostname mws.amazonservices.fr was found in DNS cache
+*   Trying 54.239.39.200...
+* TCP_NODELAY set
+* Connected to mws.amazonservices.fr (54.239.39.200) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: mws-eu.amazonservices.com
+* Server certificate: Symantec Class 3 Secure Server CA - G4
+* Server certificate: VeriSign Class 3 Public Primary Certification Authority - G5
+> POST / HTTP/1.1
+Host: mws.amazonservices.fr
+User-Agent: PPC Entourage/0.0.1 (Language=PHP/5.6.30; Platform=Darwin/x86_64/16.5.0; MWSClientVersion=2015-06-18)
+Accept: */*
+Content-Length: 309
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 309 out of 309 bytes
+< HTTP/1.1 200 OK
+< Server: Server
+< Date: Sat, 08 Apr 2017 13:23:17 GMT
+< Content-Type: text/xml
+< Content-Length: 7004
+< Connection: keep-alive
+< x-mws-quota-max: 80.0
+< x-mws-quota-remaining: 80.0
+< x-mws-quota-resetsOn: 2017-04-08T14:07:00.000Z
+< X-Amz-Date: Sat, 08 Apr 2017 13:23:17 GMT
+< Vary: Accept-Encoding,User-Agent
+< x-amzn-Authorization: AAA SignedHeaders=X-Amz-Date, identity=com.amazon.aaa.FrpAndromedaReportsPlugin.AndromedaControlService.amzn1.aaa.id.lwigtwr3h4inoeknjer76q4tl4.Default/1, Signed=true, Encrypted=false, Signature=08wYSgv3oFlkApCb7+UA3928KeYnMCsGHHdAKdv6EFU=, Algorithm=HmacSHA256
+< x-mws-request-id: 8bdf16e7-6df4-4311-83e1-26e5f45765d9
+< x-mws-timestamp: 2017-04-08T13:23:17.235Z
+< x-mws-response-context: sXUUrV316HlUe0CMtuDMHvpZeo/yCS3RCu1mjpHvg17n1bSxJh88L3zt6ERBJ6qWeNqzuq4/Z+4=
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host mws.amazonservices.fr left intact
+* Rebuilt URL to: https://mws.amazonservices.fr/
+*   Trying 54.239.39.200...
+* TCP_NODELAY set
+* Connected to mws.amazonservices.fr (54.239.39.200) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: mws-eu.amazonservices.com
+* Server certificate: Symantec Class 3 Secure Server CA - G4
+* Server certificate: VeriSign Class 3 Public Primary Certification Authority - G5
+> POST / HTTP/1.1
+Host: mws.amazonservices.fr
+User-Agent: PPC Entourage/0.0.1 (Language=PHP/5.6.30; Platform=Darwin/x86_64/16.5.0; MWSClientVersion=2015-06-18)
+Accept: */*
+Content-Length: 466
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 466 out of 466 bytes
+< HTTP/1.1 200 OK
+< Server: Server
+< Date: Sat, 08 Apr 2017 13:23:19 GMT
+< Content-Type: text/xml
+< Content-Length: 715
+< Connection: keep-alive
+< x-mws-quota-max: 60.0
+< x-mws-quota-remaining: 60.0
+< x-mws-quota-resetsOn: 2017-04-08T14:07:00.000Z
+< X-Amz-Date: Sat, 08 Apr 2017 13:23:19 GMT
+< x-amzn-Authorization: AAA SignedHeaders=X-Amz-Date, identity=com.amazon.aaa.FrpAndromedaReportsPlugin.AndromedaControlService.amzn1.aaa.id.lwigtwr3h4inoeknjer76q4tl4.Default/1, Signed=true, Encrypted=false, Signature=/kbVptLuVg0LwzveYj4M/JUKQOWx9yV7FPJxROGfprI=, Algorithm=HmacSHA256
+< x-mws-request-id: 048b49eb-ec9b-4495-b77e-03473072c97d
+< x-mws-timestamp: 2017-04-08T13:23:19.074Z
+< x-mws-response-context: RosMB8Tnh/SfyqeTg0UJvfNOV1d0hSCR2gRFEPQ4IriYF0JjR+iwF5/R/CAwOW51PdgkSzEax/g=
+< Vary: Accept-Encoding,User-Agent
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host mws.amazonservices.fr left intact
+* Rebuilt URL to: https://mws.amazonservices.fr/
+* Hostname mws.amazonservices.fr was found in DNS cache
+*   Trying 54.239.39.200...
+* TCP_NODELAY set
+* Connected to mws.amazonservices.fr (54.239.39.200) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: mws-eu.amazonservices.com
+* Server certificate: Symantec Class 3 Secure Server CA - G4
+* Server certificate: VeriSign Class 3 Public Primary Certification Authority - G5
+> POST / HTTP/1.1
+Host: mws.amazonservices.fr
+User-Agent: PPC Entourage/0.0.1 (Language=PHP/5.6.30; Platform=Darwin/x86_64/16.5.0; MWSClientVersion=2015-06-18)
+Accept: */*
+Content-Length: 311
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 311 out of 311 bytes
+< HTTP/1.1 200 OK
+< Server: Server
+< Date: Sat, 08 Apr 2017 13:23:20 GMT
+< Content-Type: text/xml
+< Content-Length: 6793
+< Connection: keep-alive
+< x-mws-quota-max: 80.0
+< x-mws-quota-remaining: 80.0
+< x-mws-quota-resetsOn: 2017-04-08T14:07:00.000Z
+< X-Amz-Date: Sat, 08 Apr 2017 13:23:20 GMT
+< Vary: Accept-Encoding,User-Agent
+< x-amzn-Authorization: AAA SignedHeaders=X-Amz-Date, identity=com.amazon.aaa.FrpAndromedaReportsPlugin.AndromedaControlService.amzn1.aaa.id.lwigtwr3h4inoeknjer76q4tl4.Default/1, Signed=true, Encrypted=false, Signature=ikKHtAeTOI+sOeJ/WT1iljiBzoeEc1EEx6HVmwPsZng=, Algorithm=HmacSHA256
+< x-mws-request-id: 31e7a81c-6d78-4a43-aae3-aa353bd81a57
+< x-mws-timestamp: 2017-04-08T13:23:20.220Z
+< x-mws-response-context: sFETmghxyFXlIIok6Uns+xIjY88x8QhHPI6UjVkTHuqEmyOaHwHOnrERKeZYr9li7C6UxgduRuI=
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host mws.amazonservices.fr left intact
+
