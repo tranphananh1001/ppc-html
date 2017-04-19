@@ -8,6 +8,8 @@
  *
  */
 
+$time_gb_start = time();
+
 set_time_limit(0);
 ini_set("memory_limit", -1);
 
@@ -18,14 +20,34 @@ $countries = json_decode(@file_get_contents(__DIR__ . '/countries.json'), true);
 
 include 'db.php';
 
+// pa
+if (isset($argv['1'])) {
+    $userLog = $argv['1'];
+    $user_id1 = ' and mws.user=' . $argv['1'];
+} else {
+    $userLog = '';
+    $user_id1 = '';
+}
+
+writeLogRobot('log_8_days','GENreportsPart', 'Start---------------------------', $userLog);
+// end pa
+
 $usersResult = $db->query('SELECT genReportsToProcess.user,genReportsToProcess.id, genReportsToProcess.date, 
                                  mws.country_id, mws.code, mws.SellerID
                             FROM 
                                 genReportsToProcess
                             INNER JOIN mws ON mws.user = genReportsToProcess.user
-                            WHERE done = 0 ');
+                            WHERE done = 0 '. $user_id1);
+// pa
+$isQueueReportProcess = 0;
+// end pa
 
 while ($user = $usersResult->fetch(PDO::FETCH_ASSOC)) {
+
+    // pa
+    $isQueueReportProcess = 1;
+    // end pa
+
     //check again if report still  not done
     $Result = $db->query('SELECT done
                             FROM 
@@ -147,6 +169,11 @@ while ($user = $usersResult->fetch(PDO::FETCH_ASSOC)) {
                 $db->query("UPDATE snapshots SET needUpdate = 0, `status` ='" . $response->status . "', snapshotId ='" . $response->snapshotId . "' WHERE `type` ='" . $snapshotKeys['type'] . "' AND `userId` =  " . $user['user'] . " LIMIT 1 ");
 
             } else {
+
+                // pa
+                writeLogRobot('log_8_days','GENreportsPart', 'Error Response snapshots API with type: '.$snapshotKeys['type'] , $userLog);
+                // end pa
+
                 $response = json_decode($snapshotRequest['response']);
 				print_r($response);
                 echo 'Response code= ' . $response->code . ' Details=' . $response->details;
@@ -205,9 +232,17 @@ while ($user = $usersResult->fetch(PDO::FETCH_ASSOC)) {
         echo "Can't find a profile";
         print_r($profilesResponse);
         writeLog('GENreportsPart', 'Can\'t find a profile ', $user_id);
+
+        // pa
+        writeLogRobot('log_8_days','GENreportsPart', 'Can\'t find a profile in API ', $userLog);
+        // end pa
     }
 
     $db->query('update genReportsToProcess set done=1 where id=' . $user['id']);
 }
 echo '--FINISH--';
 writeLog('GENreportsPart', '--FINISH-- ', $user_id);
+
+// pa
+writeLogRobot('log_8_days','GENreportsPart', 'END, TOTAL TIME '.(time()-$time_gb_start).' ---------------------------', $userLog);
+//end pa

@@ -113,10 +113,15 @@ function getReport_old($diff = 86400) {
 /**
 New version this function lock reports.json 
 */
-function getReport($diff = 86400)
+function getReport($diff = 86400, $user_id=0)
 {
 	$minDiff=10; // 800s- 15 min diff //edit by quangnd for testing
-    $filename = __DIR__ . '/reports.json';
+    // $filename = __DIR__ . '/reports.json';
+    
+    // pa
+    $filename = __DIR__ . '/reports1day'.$user_id.'.json';
+    // end pa
+    
     if (is_writable($filename)) {
         $fp = fopen($filename, "a+");
         do {
@@ -124,39 +129,39 @@ function getReport($diff = 86400)
             if ($t = flock($fp, LOCK_EX | LOCK_NB, $wouldblock)) {
 				clearstatcache();
                 $reports = json_decode(fread($fp, filesize($filename)), true, 512, JSON_BIGINT_AS_STRING);
-             /*   do {
+                /*   do {
                     $report = array_shift($reports);
                 } while ($report AND time() - $report['_time'] > $diff);*/
 				echo "we have ".count($reports)." to work \n";
-			do {
-				$next=false;
-				if(count($reports)==0){
-					$report=false;
-					break;
-				}
-				$report = array_shift($reports);
-				if(time() - $report['_time'] < $minDiff){
-					echo "report too young \n";
-					writeLog ('FUNCTIONS_getreport',  "report too young \n");
-					$reports[]=$report;
-					$next=true;
-				}
-				if(time() - $report['_time'] > $diff){
-					echo "report too old \n";
-					writeLog ('FUNCTIONS_getreport',  "report too old \n");
-					$next=true;
-				}
-			} while($next);
+    			do {
+    				$next=false;
+    				if(count($reports)==0){
+    					$report=false;
+    					break;
+    				}
+    				$report = array_shift($reports);
+    				if(time() - $report['_time'] < $minDiff){
+    					echo "report too young \n";
+    					writeLog ('FUNCTIONS_getreport',  "report too young \n");
+    					$reports[]=$report;
+    					$next=true;
+    				}
+    				if(time() - $report['_time'] > $diff){
+    					echo "report too old \n";
+    					writeLog ('FUNCTIONS_getreport',  "report too old \n");
+    					$next=true;
+    				}
+    			} while($next);
 				
 				
-            $data = json_encode($reports);
-            ftruncate($fp, 0); // очищаем файл
-            if (!$write = fwrite($fp, $data)) {
-                echo "Не могу произвести запись в файл ($filename) \n";
-                writeLog ('FUNCTIONS_getreport', $filename . "Не могу произвести запись в файл \n"); //Can not write to file
-                exit;
-            }
-            flock($fp, LOCK_UN); // отпираем файл - Unlock the file
+                $data = json_encode($reports);
+                ftruncate($fp, 0); // очищаем файл
+                if (!$write = fwrite($fp, $data)) {
+                    echo "Не могу произвести запись в файл ($filename) \n";
+                    writeLog ('FUNCTIONS_getreport', $filename . "Не могу произвести запись в файл \n"); //Can not write to file
+                    exit;
+                }
+                flock($fp, LOCK_UN); // отпираем файл - Unlock the file
             } else {
                 if ($wouldblock) {
                     echo($filename . " File already  locked. Wait....\n");
@@ -319,7 +324,12 @@ function writeLog ($script='SCRIPT', $msg='', $fileSuffix='', $newFile=false){
 function addReportPart($report, $profile_id, $user_id, $region, $refresh_token, $time, $type)
 {
 	echo "add report \n";
-    $filename = __DIR__ . '/reports.json';
+    // $filename = __DIR__ . '/reports.json';
+
+    // pa
+    $filename = __DIR__ . '/reports1day'.$user_id.'.json';
+    // end pa
+
 	if (!file_exists($filename)) {
 		$fh = fopen($filename, 'w') or die("Can't create file");
 	}
@@ -415,3 +425,37 @@ function array_utf8_encode($dat)
         $ret[$i] = self::array_utf8_encode($d);
     return $ret;
 }
+
+/**
+ * Write log error robot
+ */
+//pa
+if( !function_exists('writeLogRobot') ) {
+    function writeLogRobot ($subFolder='',$script='SCRIPT',$msg='', $fileSuffix='', $newFile=false){
+        $folder = __DIR__ . '/logs/' . $subFolder;
+        
+        if ( !file_exists($folder) ) {
+            mkdir($folder);
+        }
+
+        $filename = $folder.$script.'_'.$fileSuffix.'.log';
+        if (!file_exists($filename)) {
+            $fh = fopen($filename, 'w') or die("Can't create file");
+        }
+        if (is_writable($filename)) {
+            if($newFile){
+                $fp = fopen($filename, "w");
+            }else{
+                $fp = fopen($filename, "a");
+            }
+            $data = date("Y-m-d H:i:s")."\t".$msg."\n";
+                if (!$write = fwrite($fp, $data)) {
+                    echo "\033[31m Не могу произвести запись в файл ($filename) \033[0m  \n";
+                }
+            fclose($fp);
+        }else{
+            echo "\033[31m Log file not writable \033[0m  \n";  
+        }
+    }
+}
+// end pa

@@ -50,7 +50,7 @@ New version this function lock reports.json
 function getReport($user_id)
 {
 	$diff = 86400;
-	$minDiff=900; // 15 min diff
+	$minDiff= 10; //pa  //900 ; // 15 min diff
     $filename = __DIR__ . '/reports'.$user_id.'.json';
 	if (!file_exists($filename)) {
 		$fh = fopen($filename, 'w') or die("Can't create file");
@@ -156,3 +156,37 @@ function writeLog ($script='SCRIPT', $msg='', $fileSuffix='', $newFile=false){
 		echo "\033[31m Log file not writable \033[0m  \n";	
 	}
 }
+
+/**
+ * Write log error robot
+ */
+//pa
+if( !function_exists('writeLogRobot') ) {
+    function writeLogRobot ($subFolder='',$script='SCRIPT',$msg='', $fileSuffix='', $newFile=false){
+        $folder = __DIR__ . '/logs/' . $subFolder;
+        
+        if ( !file_exists($folder) ) {
+            mkdir($folder);
+        }
+
+        $filename = $folder.$script.'_'.$fileSuffix.'.log';
+        if (!file_exists($filename)) {
+            $fh = fopen($filename, 'w') or die("Can't create file");
+        }
+        if (is_writable($filename)) {
+            if($newFile){
+                $fp = fopen($filename, "w");
+            }else{
+                $fp = fopen($filename, "a");
+            }
+            $data = date("Y-m-d H:i:s")."\t".$msg."\n";
+                if (!$write = fwrite($fp, $data)) {
+                    echo "\033[31m Не могу произвести запись в файл ($filename) \033[0m  \n";
+                }
+            fclose($fp);
+        }else{
+            echo "\033[31m Log file not writable \033[0m  \n";  
+        }
+    }
+}
+// end pa

@@ -4,19 +4,36 @@
  * php getReportsPreparedInfile.php
  */
 
+$time_gb_start = time();
+
 set_time_limit(0);
 ini_set("memory_limit", -1);
 
 require_once 'functions.php';
 require_once 'AmazonAdvertisingApi/Client.php';
+
+// pa
+if (isset($argv['1'])) {
+    $user_id = $argv['1'];
+} else {
+    $user_id = '';
+}
+// end pa
+
 writeLog('getResponsePreparedInfile', 'Start  ', '', true);
+
+// pa
+// writeLogRobot('log_8_days','getReportsPreparedInfile', 'Start---------------------------', $user_id);
+// end pa
+
 include 'db.php';
 $PDOInFile = new PDO('mysql:host=' . $config_db['mysql_host'] . ';dbname=' . $config_db['mysql_db'], $config_db['mysql_user'], $config_db['mysql_password'], array(PDO::MYSQL_ATTR_LOCAL_INFILE => true, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES "' . $config_db['mysql_charset'] . '"'));
 
 
 $r = $PDOInFile->exec('SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED');
 
-while ($reportData = getReport()) {
+
+while ($reportData = getReport(86400, $user_id)) {
 
    //WHY fields keyword and matchType ??
     $productADSPreparedFile = "LOAD DATA LOCAL INFILE '__FILENAME__' REPLACE INTO TABLE productadsreport2
@@ -471,6 +488,9 @@ while ($reportData = getReport()) {
  */
 function WriteToFile($data, $type, $requestId)
 {
+    if (!file_exists("reports/") ) {
+        mkdir("reports/");
+    }
 
     $dir = "reports/" . $requestId;
     if (!file_exists($dir) && !is_dir($dir)) {
@@ -551,7 +571,7 @@ function WriteToFile($data, $type, $requestId)
 
 function insertFile($PDOInFile, $command)
 {
-    echo $PDOInFile;
+    // echo $PDOInFile;
     try {
         do {
             $r = $PDOInFile->exec($command);

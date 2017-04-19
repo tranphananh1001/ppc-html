@@ -286,6 +286,7 @@ while ($reportData = getReport($user_id)) {
 
                 $reportResponse = $client->getReport($reportData['report']['response']['reportId']);
 
+                echo"keywordsQuery=================================";
                 var_dump($reportResponse);
 
 

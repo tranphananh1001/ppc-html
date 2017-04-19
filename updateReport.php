@@ -1,7 +1,4 @@
 <?php
-
-$time_gb_start = time();
-
 set_time_limit(0);
 ini_set('memory_limit', -1);
 
@@ -10,30 +7,7 @@ require_once 'AmazonAdvertisingApi/Client.php';
 
 date_default_timezone_set("America/Los_Angeles");
 
-// Add by quangnd 
-sleep(3);
-$cmd1 = '/usr/bin/php /srv/robots/syncdat.php ' . $argv[2];
-$cmd2 = '/usr/bin/php /srv/robots/lookup.php ' . $argv[2];
-$cmd3 = '/usr/bin/php /var/www/html/getReports1.php "-1 days" ' . $argv[2];
-$cmd4 = '/usr/bin/php /var/www/html/sendemailfinish.php ' . $argv[2];
-$sleep = 'sleep 3';
-writeLog('GENreports1', 'BEGIN SYNC', $argv[2]);
-
-// Method 1
-//exec($cmd1 . ' && ' . $sleep . ' && ' . $cmd1 . ' && ' . $sleep . ' && ' . $cmd2 . ' && ' . $cmd3 . ' && ' . $cmd4) ;
-
-// Method 2
-passthru($cmd1);
-sleep(15);
-
-passthru($cmd1);
-sleep(5);
-
-passthru($cmd2);
-sleep(5);
-
 $fromTime = strtotime(@$_GET['date'] ? $_GET['date'] : $argv['1']);
-
 if (isset($argv['2'])) {
     $user_id = $argv['2'];
     $user_id1 = ' and user=' . $argv['2'];
@@ -50,8 +24,7 @@ include 'db.php';
 $usersResult = $db->query('SELECT * FROM `mws` WHERE `code` IS NOT NULL' . $user_id1);
 $baseConfig = json_decode(@file_get_contents(__DIR__ . '/config.json'), true);
 
-writeLog('GENreports1', 'Start for time : '.$fromTime.' and user: '.$user_id , $user_id , true);
-
+writeLog('GENreports1', 'Start for time : ' . $fromTime . ' and user: ' . $user_id , $user_id , true);
 while ($user = $usersResult->fetch(PDO::FETCH_ASSOC)) {
     writeLog('GENreports1', 'Work with user: ' . $user['user'], $user_id);
     switch ($user['country_id']) {
@@ -157,12 +130,35 @@ while ($user = $usersResult->fetch(PDO::FETCH_ASSOC)) {
         }
     }
 }
-// passthru($cmd3);
-// sleep(3);
 
-// passthru($cmd4);
+// Add by quangnd 
+sleep(3);
+$cmd1 = '/usr/bin/php /srv/robots/syncdat.php ' . $argv[2];
+$cmd2 = '/usr/bin/php /srv/robots/lookup.php ' . $argv[2];
+$cmd3 = '/usr/bin/php /var/www/html/getReports1.php "-1 days" ' . $argv[2];
+$cmd4 = '/usr/bin/php /var/www/html/sendemailfinish.php ' . $argv[2];
+$sleep = 'sleep 3';
+writeLog('GENreports1', 'BEGIN SYNC', $argv[2]);
 
-writeLog('GENreports1', 'SYNC SUCCESS, TOTAL TIME: '.(time()-$time_gb_start).' s--------------------------', $argv[2]);
+// Method 1
+//exec($cmd1 . ' && ' . $sleep . ' && ' . $cmd1 . ' && ' . $sleep . ' && ' . $cmd2 . ' && ' . $cmd3 . ' && ' . $cmd4) ;
+
+// Method 2
+passthru($cmd1);
+sleep(15);
+
+passthru($cmd1);
+sleep(60);
+
+passthru($cmd2);
+sleep(30);
+
+
+passthru($cmd3);
+sleep(3);
+
+writeLog('GENreports1', 'SYNC SUCCESS', $argv[2]);
+
 
 ?>
 
